@@ -21,17 +21,3 @@ loop do
     break if entree == "-1"
     puts "La valeur de la résistance est : #{resultat}"
 end
-
-def lecture
-    if File.exist?("lire.json")
-        JSON.parse(File.read("lire.json"))
-    else
-        []
-    end
-end
-
-def ecriture(fichier)
-    File.open("lire.json", "w") do |file|
-        file.write(JSON.pretty_generate(fichier))
-    end
-end
