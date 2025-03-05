@@ -1,27 +1,3 @@
-# def couleur_vers_chiffre(couleur)
-#     codes_couleurs = {
-#       "black" => 0, "brown" => 1, "red" => 2, "orange" => 3, "yellow" => 4,
-#       "green" => 5, "blue" => 6, "violet" => 7, "gray" => 8, "white" => 9
-#     }
-#     codes_couleurs[couleur.downcase] 
-#   end
-  
-#   def obtenir_valeur_resistance(couleurs)
-#     chiffres = couleurs.map { |c| couleur_vers_chiffre(c) }.compact
-  
-#     return "Pas assez de couleurs valides." if chiffres.length < 3
-  
-#     valeur = "#{chiffres[0]}#{chiffres[1]}" + "0" * chiffres[2]
-#     valeur
-#   end
-  
-#   print "Entrez trois couleurs séparées par un espace : "
-#   entree_utilisateur = gets.chomp
-#   liste_couleurs = entree_utilisateur.split("-")
-  
-#   resultat = obtenir_valeur_resistance(liste_couleurs)
-#   puts "Valeur de la résistance : #{resultat} "
-
 def est_couleur(couleur)
     code_couleur = { "black" => 0, "brown" => 1, "red" => 2, "orange" => 3, "yellow" => 4, 
     "green" =>5, "blue" => 6, "violet" => 7, "gray" => 8, "white" =>9 }
